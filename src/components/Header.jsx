@@ -35,7 +35,7 @@ export function Header({ user, onLogout, cartCount }) {
           ) : (
             <>
               <Link to="/login" className="hover:text-fuchsia-400 transition">
-                Login
+                LOGIN
               </Link>
               <Link to="/register" className="bg-fuchsia-600 hover:bg-fuchsia-700 px-4 py-2 rounded transition">
                 Register
