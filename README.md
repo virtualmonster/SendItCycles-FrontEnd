@@ -1,6 +1,6 @@
 # CycleShop Frontend
 
-React-based frontend application for the CycleShop e-commerce platform.
+React-based frontend application for the CycleShop e-commerce platform
 
 ## Technology Stack
 - React 18
