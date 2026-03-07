@@ -1,6 +1,8 @@
 import React from 'react';
 
 export function Footer() {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="bg-slate-900 text-white mt-12">
       <div className="max-w-7xl mx-auto px-4 py-8">
@@ -36,7 +38,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-slate-700 pt-8 text-center text-slate-400">
-          <p>&copy; 2026 SendIt Cycles. All rights reserved.</p>
+          <p>&copy; {currentYear} SendIt Cycles. All rights reserved.</p>
         </div>
       </div>
     </footer>
