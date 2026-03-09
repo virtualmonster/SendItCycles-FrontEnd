@@ -38,7 +38,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-slate-700 pt-8 text-center text-slate-400">
-          <p>&copy; {currentYear} SendIt Cycles. All rights reserved.</p>
+          <p>&copy; {currentYear} SendIt Cycles Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>
