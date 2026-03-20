@@ -46,12 +46,20 @@ class ErrorBoundary extends React.Component {
 }
 
 export default function App() {
-  const { user, login, logout, isAdmin } = useAuth();
+  const { user, login, logout, isAdmin, isInitializing } = useAuth();
   const { items: cartItems, addItem, removeItem, updateQuantity, clearCart } = useCart();
 
   const handleLogout = () => {
     logout();
   };
+
+  if (isInitializing) {
+    return (
+      <div className="min-h-screen bg-slate-50 flex items-center justify-center text-slate-700">
+        Loading SendIt Cycles...
+      </div>
+    );
+  }
 
   return (
     <ErrorBoundary>
